@@ -45,16 +45,23 @@ const Navbar: React.FC = () => {
           </div>
 
           <div className='d-flex align-items-center'>
-            
-
             <a className='nav-link text-light' href='#'>
               Medicaid Renewal
             </a>
           </div>
         </div>
 
+        <div className='d-flex align-items-center'>
+         {/* <p className='text-light'>Search</p> */}
+         <input className='search-input' placeholder='Search' type='text'/>
+        </div>
+
         <div className='col-sm-3'>
-          right nsvbar
+          <div className='d-flex align-items-center'>
+            <a className='nav-link text-light' href='#'>
+              Espanol
+            </a>
+          </div>
         </div>
 
       </div>
