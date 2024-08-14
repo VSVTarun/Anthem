@@ -5,71 +5,69 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Navbar: React.FC = () => {
   return (
-    <div className='bg-primary' >
-      <div className='container row'>
+    <nav className="navbar navbar-expand-lg bg-primary">
 
-        <div className='left-top-nav-container col-sm-9  d-flex flex-row justify-content-around'>
-          <div className="dropdown show">
-            <a className="btn dropdown-toggle text-light" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <div className="container collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               For Employers
             </a>
-
-            <div className="dropdown-menu" data-toggle="dropup" aria-labelledby="dropdownMenuLink">
+            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
               <a className="dropdown-item" href="#">Action</a>
               <a className="dropdown-item" href="#">Another action</a>
+              <div className="dropdown-divider"></div>
               <a className="dropdown-item" href="#">Something else here</a>
             </div>
-          </div>
-          <div className="dropdown show">
-            <a className="btn dropdown-toggle text-light" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          </li>
+          <li className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               For Producers
             </a>
-
-            <div className="dropdown-menu" data-toggle="dropup" aria-labelledby="dropdownMenuLink">
+            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
               <a className="dropdown-item" href="#">Action</a>
               <a className="dropdown-item" href="#">Another action</a>
+              <div className="dropdown-divider"></div>
               <a className="dropdown-item" href="#">Something else here</a>
             </div>
-          </div>
-
-          <div className="dropdown show">
-            <a className="btn dropdown-toggle text-light" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          </li>
+          <li className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               For Providers
             </a>
-
-            <div className="dropdown-menu" data-toggle="dropup" aria-labelledby="dropdownMenuLink">
+            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
               <a className="dropdown-item" href="#">Action</a>
               <a className="dropdown-item" href="#">Another action</a>
+              <div className="dropdown-divider"></div>
               <a className="dropdown-item" href="#">Something else here</a>
             </div>
-          </div>
-
-          <div className='d-flex align-items-center'>
+          </li>
+          <li className="nav-item ">
             <a className='nav-link text-light' href='#'>
               Medicaid Renewal
             </a>
-          </div>
-        </div>
 
-        <div className='d-flex align-items-center'>
-         {/* <p className='text-light'>Search</p> */}
-         <input className='search-input' placeholder='Search' type='text'/>
-        </div>
+          </li>
 
-        <div className='col-sm-3'>
-          <div className='d-flex align-items-center'>
-            <a className='nav-link text-light' href='#'>
-              Espanol
-            </a>
-          </div>
-        </div>
+        </ul>
 
       </div>
 
+      <div>
+        <ul className="navbar-nav mr-auto">
+          <li className='nav-item'>
+            <input className='search-input' placeholder='Search' type='text' />
+          </li>
 
+          <li className="nav-item ">
+            <a className='nav-link text-light' href='#'>
+              Espanol
+            </a>
+          </li>
+        </ul>
+      </div>
 
-
-    </div>
+    </nav>
 
 
 
